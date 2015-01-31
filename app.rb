@@ -6,6 +6,7 @@ Pakyow::App.define do
   configure :global do
     # put global config here and they'll be available across environments
     app.name = 'Pakyow'
+    app.data_path ||= 'postgres://bruno:[ 09 postgresbruno ]@localhost:5432/pakyow_posts'
   end
 
   configure :development do
@@ -23,5 +24,9 @@ Pakyow::App.define do
 
   configure :production do
     # put your production config here
+  end
+
+  configure :test do
+    # put your test config here
   end
 end

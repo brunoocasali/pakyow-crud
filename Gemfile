@@ -1,8 +1,15 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "pakyow", "0.9.1"
+gem 'pakyow', '0.9.1'
 
 # application server
-gem "puma"
+gem 'puma'
 
-# your gems here
+# ORM for database access!
+gem 'sequel'
+
+# Postgres is a big open source relational database
+gem 'pg'
+
+# BDD for your respect!
+gem 'rspec'
